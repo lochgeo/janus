@@ -14,14 +14,14 @@ print("Creating Game of Thrones graph...")
 
 # Create characters
 print("Creating Game of Thrones characters...")
-jon_snow = g.addV('Character').property('name', 'Jon Snow').next()
-arya_stark = g.addV('Character').property('name', 'Arya Stark').next()
-daenerys_targaryen = g.addV('Character').property('name', 'Daenerys Targaryen').next()
+jon_snow = g.addV('Jon Snow').property('type', 'Character').next()
+arya_stark = g.addV('Arya Stark').property('type', 'Character').next()
+daenerys_targaryen = g.addV('Daenerys Targaryen').property('type', 'Character').next()
 
 # Create houses
 print("Creating Game of Thrones houses...")
-stark_house = g.addV('House').property('name', 'House Stark').next()
-targaryen_house = g.addV('House').property('name', 'House Targaryen').next()
+stark_house = g.addV('Stark House').property('type', 'House').next()
+targaryen_house = g.addV('Targaryen House').property('type', 'House').next()
 
 # Create relationships
 print("Creating Game of Thrones relationships...")
